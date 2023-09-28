@@ -1,0 +1,1 @@
+shellpermission 1
