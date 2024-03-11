@@ -4,9 +4,9 @@
 #   Displays minutes from 0 to 59
 
 hours=0
-while [ $hour -le 12]
+while [ $hour -le 12 ]
 do
-  echo "hour: $hour"
+  echo "Hour: $hour"
   minute=1
   while [ $minute -le 59 ]
   do
