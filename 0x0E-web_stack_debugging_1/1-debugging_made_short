@@ -2,7 +2,7 @@
 # this configure Nginx server to listen on port 80.
 
 # this will create  a link  between Nginx configuration file
-sudo sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
-sudo service nginx restart
-echo "" | sudo dd status=none of=/run/nginx.pid
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+service nginx restart
+pkill -f "nginx
 
