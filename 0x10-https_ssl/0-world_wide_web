@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# this prints domains and subdomains
+# Displays informations about domain
 
 domain_information() {
     local domain="$1"
