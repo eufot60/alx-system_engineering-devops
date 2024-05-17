@@ -5,5 +5,5 @@
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 # restart nginx
 service nginx restart
-kill "$(pgrep 'nginx' | head -l)"
+kill "$(pgrep 'nginx' | head -1)"
 
