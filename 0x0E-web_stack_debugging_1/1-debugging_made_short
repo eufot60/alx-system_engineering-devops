@@ -5,5 +5,4 @@
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 # restart nginx
 service nginx restart
-# this will end the first nginx process
-kill "$(pgrep 'nginx' | head -l)"
+rm /run/nginx.pid
