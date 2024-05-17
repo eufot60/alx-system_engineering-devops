@@ -4,6 +4,6 @@
 # this will create  a link  between Nginx configuration file
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 # restart nginx
-service nginx restart
+service nginx start
 kill "$(pgrep 'nginx' | head -1)"
 
