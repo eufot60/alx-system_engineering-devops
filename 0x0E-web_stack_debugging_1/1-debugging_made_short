@@ -2,7 +2,8 @@
 # this configure Nginx server to listen on port 80.
 
 # this will create  a link  between Nginx configuration file
-ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+# restart nginx
 service nginx restart
-pkill -f "nginx
+kill "$(pgrep 'nginx' | head -l)"
 
